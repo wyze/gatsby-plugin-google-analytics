@@ -9,6 +9,7 @@
     "email": "neil.kistner@gmail.com",
     "url": "neilkistner.com"
   },
+  "main": "gatsby-ssr.js",
   "scripts": {
     "build": "microbundle --sourcemap false --format cjs --output . src/gatsby-*",
     "clean": "rimraf .rpt2_cache gatsby-*.js",
