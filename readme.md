@@ -102,6 +102,10 @@ In order to transform a key to a function, we specify it as an array. The first 
 
 > [Full Change Log](changelog.md)
 
+### [v1.0.0](https://github.com/wyze/gatsby-plugin-google-analytics/releases/tag/v1.0.0) (2018-05-21)
+
+* [[`3365ff0851`](https://github.com/wyze/gatsby-plugin-google-analytics/commit/3365ff0851)] - Initial commit (Neil Kistner)
+
 ## License
 
 MIT © [Neil Kistner](//neilkistner.com)

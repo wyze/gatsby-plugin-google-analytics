@@ -1,6 +1,6 @@
 {
   "name": "@wyze/gatsby-plugin-google-analytics",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A Gatsby plugin to add Google Analytics.",
   "license": "MIT",
   "repository": "wyze/gatsby-plugin-google-analytics",
