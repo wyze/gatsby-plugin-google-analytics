@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`onRenderBody adds the google analytic scripts 1`] = `
+Array [
+  Array [
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','1','auto');ga('require','dnt');ga('set','anonymizeIp',1);",
+        }
+      }
+    />,
+    <Script
+      source="//www.google-analytics.com/analytics.js"
+    />,
+    <Script
+      source="//storage.googleapis.com/outfox/dnt_min.js"
+    />,
+  ],
+]
+`;
+
+exports[`onRenderBody adds the google analytic scripts with plugins 1`] = `
+Array [
+  Array [
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','1','auto');ga('require','eventTracker');ga('require','dnt');ga('set','anonymizeIp',1);",
+        }
+      }
+    />,
+    <Script
+      source="//www.google-analytics.com/analytics.js"
+    />,
+    <Script
+      source="//storage.googleapis.com/outfox/dnt_min.js"
+    />,
+    <Script
+      source="js/autotrack.custom.js"
+    />,
+  ],
+]
+`;
+
+exports[`onRenderBody adds the google analytic scripts with plugins and plugin options 1`] = `
+Array [
+  Array [
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','1','auto');ga('require','eventTracker',{events:[\\"click\\"],hitFilter:function(model,element,event) {model.set('eventAction', event.type, true)}});ga('require','dnt');ga('set','anonymizeIp',1);",
+        }
+      }
+    />,
+    <Script
+      source="//www.google-analytics.com/analytics.js"
+    />,
+    <Script
+      source="//storage.googleapis.com/outfox/dnt_min.js"
+    />,
+    <Script
+      source="js/autotrack.custom.js"
+    />,
+  ],
+]
+`;
+
+exports[`onRenderBody adds the google analytic scripts without anonymize 1`] = `
+Array [
+  Array [
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','1','auto');ga('require','dnt');",
+        }
+      }
+    />,
+    <Script
+      source="//www.google-analytics.com/analytics.js"
+    />,
+    <Script
+      source="//storage.googleapis.com/outfox/dnt_min.js"
+    />,
+  ],
+]
+`;
+
+exports[`onRenderBody adds the google analytic scripts without respectDNT 1`] = `
+Array [
+  Array [
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','1','auto');ga('set','anonymizeIp',1);",
+        }
+      }
+    />,
+    <Script
+      source="//www.google-analytics.com/analytics.js"
+    />,
+    false,
+  ],
+]
+`;

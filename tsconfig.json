@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "jsx": "react",
+    "lib": [
+      "es2015"
+    ]
+  },
+  "files": [
+    "src/gatsby-browser.ts",
+    "src/gatsby-ssr.ts"
+  ]
+}

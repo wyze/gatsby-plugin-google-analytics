@@ -1,0 +1,59 @@
+{
+  "name": "@wyze/gatsby-plugin-google-analytics",
+  "version": "0.0.0",
+  "description": "A Gatsby plugin to add Google Analytics.",
+  "license": "MIT",
+  "repository": "wyze/gatsby-plugin-google-analytics",
+  "author": {
+    "name": "Neil Kistner",
+    "email": "neil.kistner@gmail.com",
+    "url": "neilkistner.com"
+  },
+  "scripts": {
+    "build": "microbundle --sourcemap false --format cjs --output . src/gatsby-*",
+    "clean": "rimraf .rpt2_cache gatsby-*.js",
+    "dev": "microbundle watch --sourcemap false --format cjs --output . src/gatsby-*",
+    "postbuild": "find . -name '*.ts.js' -exec sh -c 'mv \"$0\" \"${0%.ts.js}.js\"' {} \\;",
+    "prebuild": "yarn clean",
+    "test": "jest",
+    "version": "write-changelog"
+  },
+  "files": [
+    "gatsby-browser.js",
+    "gatsby-ssr.js"
+  ],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "google analytics"
+  ],
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.1.1",
+    "jest": "^22.4.3",
+    "microbundle": "^0.4.4",
+    "react": "^16.3.2",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^22.4.4",
+    "typescript": "^2.8.3",
+    "write-changelog": "^1.1.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^1.0.0",
+    "react": "^15.0.0 || ^16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  }
+}

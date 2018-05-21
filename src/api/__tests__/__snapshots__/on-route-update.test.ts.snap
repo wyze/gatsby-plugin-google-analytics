@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`onRouteUpdate calls ga function with new page: sending the pageview 1`] = `
+Array [
+  "send",
+  "pageview",
+]
+`;
+
+exports[`onRouteUpdate calls ga function with new page: setting the page 1`] = `
+Array [
+  "set",
+  "page",
+  "/about",
+]
+`;
+
+exports[`onRouteUpdate handles when location is not supplied: sending the pageview 1`] = `
+Array [
+  "send",
+  "pageview",
+]
+`;
+
+exports[`onRouteUpdate handles when location is not supplied: setting the page 1`] = `
+Array [
+  "set",
+  "page",
+  undefined,
+]
+`;
